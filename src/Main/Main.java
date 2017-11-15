@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package parcial2;
+package Main;
 
 import java.io.File;
+import parcial2.*;
 
 /**
  *
@@ -18,15 +19,11 @@ public class Main {
 // A.2=V
 // A.3=V
 // A.4=F
-//B=V
-            
-    
-    
-    
-    
+//B=V  
     
     public static void main(String[] args) {
-        File f= new File("datos");
-        Universidad universidad= new Universidad(f);
+        Universidad universidad= new Universidad();
+        universidad.agregar_sedes();
+        
     }
 }
