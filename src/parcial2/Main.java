@@ -12,8 +12,21 @@ import java.io.File;
  * @author Estudiante
  */
 public class Main {
+    
+//    RESPUESTAS PARCIAL:
+// A.1=F
+// A.2=V
+// A.3=V
+// A.4=F
+//B=V
+            
+    
+    
+    
+    
+    
     public static void main(String[] args) {
         File f= new File("datos");
-        Universidad universidad= new Universidad("datos");
+        Universidad universidad= new Universidad(f);
     }
 }
