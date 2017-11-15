@@ -12,7 +12,7 @@ package parcial2;
 public class Sede_Edu_Continuada extends Sede {
     private String curso_popular;
 
-    public Sede_Edu_Continuada(String curso_popular, String nombre, String direciion, String telefono, double area) {
+    public Sede_Edu_Continuada(String nombre, String direciion, String telefono, double area,String curso_popular) {
         super(nombre, direciion, telefono, area);
         this.curso_popular = curso_popular;
     }
@@ -21,6 +21,10 @@ public class Sede_Edu_Continuada extends Sede {
     @Override
     public String dar_info() {
     return "Nombre: "+this.nombre+" Direccion: "+ this.direciion+" Telefono: "+ this.telefono+" Area: "+ this.area+" curso popular: "+this.curso_popular;
+    }
+
+    public String getNombre() {
+        return nombre;
     }
         
     

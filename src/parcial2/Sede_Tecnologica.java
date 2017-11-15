@@ -5,14 +5,19 @@
  */
 package parcial2;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Estudiante
  */
 public class Sede_Tecnologica extends Sede {
     private  int numero_alumnos;
-    public Sede_Tecnologica(String nombre, String direciion, String telefono, double area) {
+    private ArrayList<Programa> programas;
+    public Sede_Tecnologica(String nombre, String direciion, String telefono, double area, int x) {
         super(nombre, direciion, telefono, area);
+        this.numero_alumnos=x;
+        this.programas= new ArrayList<>();
     }
 
     @Override
@@ -22,4 +27,9 @@ public class Sede_Tecnologica extends Sede {
     public void registrar_num_alumnos(int x){
     this.numero_alumnos=x;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
 }
