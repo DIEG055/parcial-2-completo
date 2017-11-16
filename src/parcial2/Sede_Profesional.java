@@ -16,7 +16,7 @@ public class Sede_Profesional extends Sede {
     private int programas_alta_calidad;
     private ArrayList<Programa> programas;
 
-    public Sede_Profesional(String nombre,String direciion, String telefono, double area,int programas_alta_calidad) {
+    public Sede_Profesional(String nombre,String direciion, String telefono, String area,int programas_alta_calidad) {
         super(nombre, direciion, telefono, area);
         this.programas_alta_calidad = programas_alta_calidad;
            this.programas= new ArrayList<>();

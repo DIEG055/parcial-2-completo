@@ -13,9 +13,9 @@ public abstract class Sede {
     protected String nombre;
     protected String direciion;
     protected String telefono;
-    protected double area;
+    protected String area;
 
-    public Sede(String nombre, String direciion, String telefono, double area) {
+    public Sede(String nombre, String direciion, String telefono, String area) {
         this.nombre = nombre;
         this.direciion = direciion;
         this.telefono = telefono;

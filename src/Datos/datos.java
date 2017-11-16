@@ -38,34 +38,34 @@ public class datos {
     public ArrayList<Sede> leer_info() {
         ArrayList<Sede> s = new ArrayList<>();
         String nombre, tipo_sede, direciion, telefono, mejor;
-        double area;
+        String area;
         int x;
+         
         while (leer.hasNext()) {
             tipo_sede = leer.next().trim();
             if (tipo_sede.equals("sede educacion continuada")) {
-                nombre = leer.next();
-                direciion = leer.next();
-                telefono = leer.next();
-                area = leer.nextDouble();
-                mejor = leer.next();
+                nombre = leer.next().trim();
+                direciion = leer.next().trim();
+                telefono = leer.next().trim();
+                area = leer.next().trim();
+                mejor = leer.next().trim();
                 s.add(new Sede_Edu_Continuada(nombre, direciion, telefono, area, mejor));
             } else {
                 if (tipo_sede.equals("sede profesional")) {
-                    nombre = leer.next();
-                    direciion = leer.next();
-                    telefono = leer.next();
-                    area = leer.nextDouble();
-                    x = leer.nextInt();
+                    nombre = leer.next().trim();                
+                    telefono = leer.next().trim();
+                    area = leer.next().trim();
+                   x = leer.nextInt();
+                     direciion = leer.next().trim();
                     s.add(new Sede_Profesional(nombre, direciion, telefono, area, x));
-                } else {
-                    for (int i = 0; i < 3; i++) {
-                        nombre = leer.next();
-                        direciion = leer.next();
-                        telefono = leer.next();
-                        area = leer.nextDouble();
+                } else {                   
+                        nombre = leer.next().trim();                      
+                        telefono = leer.next().trim();
+                        area = leer.next().trim();
                         x = leer.nextInt();
+                         direciion = leer.next().trim();
                         s.add(new Sede_Tecnologica(nombre, direciion, telefono, area, x));
-                    }
+                    
                 }
             }
         }

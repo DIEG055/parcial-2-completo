@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Sede_Tecnologica extends Sede {
     private  int numero_alumnos;
     private ArrayList<Programa> programas;
-    public Sede_Tecnologica(String nombre, String direciion, String telefono, double area, int x) {
+    public Sede_Tecnologica(String nombre, String direciion, String telefono, String area, int x) {
         super(nombre, direciion, telefono, area);
         this.numero_alumnos=x;
         this.programas= new ArrayList<>();

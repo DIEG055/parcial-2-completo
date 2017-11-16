@@ -12,7 +12,7 @@ package parcial2;
 public class Sede_Edu_Continuada extends Sede {
     private String curso_popular;
 
-    public Sede_Edu_Continuada(String nombre, String direciion, String telefono, double area,String curso_popular) {
+    public Sede_Edu_Continuada(String nombre, String direciion, String telefono, String area,String curso_popular) {
         super(nombre, direciion, telefono, area);
         this.curso_popular = curso_popular;
     }
