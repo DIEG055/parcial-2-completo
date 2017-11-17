@@ -10,22 +10,21 @@ package parcial2;
  * @author Estudiante
  */
 public class Sede_Edu_Continuada extends Sede {
+
     private String curso_popular;
 
-    public Sede_Edu_Continuada(String nombre, String direciion, String telefono, String area,String curso_popular) {
+    public Sede_Edu_Continuada(String nombre, String direciion, String telefono, String area, String curso_popular) {
         super(nombre, direciion, telefono, area);
         this.curso_popular = curso_popular;
     }
-    
 
     @Override
     public String dar_info() {
-    return "Nombre: "+this.nombre+" Direccion: "+ this.direciion+" Telefono: "+ this.telefono+" Area: "+ this.area+" curso popular: "+this.curso_popular;
+        return "Nombre: " + this.nombre + " Direccion: " + this.direciion + " Telefono: " + this.telefono + " Area: " + this.area + " curso popular: " + this.curso_popular;
     }
 
     public String getNombre() {
         return nombre;
     }
-        
-    
+
 }

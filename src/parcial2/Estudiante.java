@@ -10,6 +10,7 @@ package parcial2;
  * @author Estudiante
  */
 public class Estudiante {
+
     private String nombre;
     private String apellido;
     private String anio_graduado;
@@ -23,6 +24,5 @@ public class Estudiante {
         this.colegio = colegio;
         this.programa = programa;
     }
-    
-    
+
 }

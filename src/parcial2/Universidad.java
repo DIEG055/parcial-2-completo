@@ -57,4 +57,7 @@ public class Universidad {
     public void editar_sede(Sede sede) {
 
     }
+    public void agregar_estudiante(String nombre,String apellido,String anio,String colegio,Programa programa){
+        this.estudiantes.add(new Estudiante(nombre,apellido,anio,colegio,programa));
+    }
 }

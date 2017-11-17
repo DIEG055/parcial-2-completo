@@ -40,7 +40,7 @@ public class datos {
         String nombre, tipo_sede, direciion, telefono, mejor;
         String area;
         int x;
-         
+
         while (leer.hasNext()) {
             tipo_sede = leer.next().trim();
             if (tipo_sede.equals("sede educacion continuada")) {
@@ -52,22 +52,26 @@ public class datos {
                 s.add(new Sede_Edu_Continuada(nombre, direciion, telefono, area, mejor));
             } else {
                 if (tipo_sede.equals("sede profesional")) {
-                    nombre = leer.next().trim();                
+                    nombre = leer.next().trim();
                     telefono = leer.next().trim();
                     area = leer.next().trim();
-                   x = leer.nextInt();
-                     direciion = leer.next().trim();
+                    x = leer.nextInt();
+                    direciion = leer.next().trim();
                     s.add(new Sede_Profesional(nombre, direciion, telefono, area, x));
-                } else {                   
-                        nombre = leer.next().trim();                      
-                        telefono = leer.next().trim();
-                        area = leer.next().trim();
-                        x = leer.nextInt();
-                         direciion = leer.next().trim();
-                        s.add(new Sede_Tecnologica(nombre, direciion, telefono, area, x));
-                    
+                } else {
+                    if (tipo_sede.equals("sede tecnologica")) {
+                        {
+                            nombre = leer.next().trim();
+                            telefono = leer.next().trim();
+                            area = leer.next().trim();
+                            x = leer.nextInt();
+                            direciion = leer.next().trim();
+                            s.add(new Sede_Tecnologica(nombre, direciion, telefono, area, x));
+                        }
+                    }
                 }
             }
+
         }
         return s;
     }

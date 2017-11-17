@@ -16,10 +16,10 @@ public class Sede_Profesional extends Sede {
     private int programas_alta_calidad;
     private ArrayList<Programa> programas;
 
-    public Sede_Profesional(String nombre,String direciion, String telefono, String area,int programas_alta_calidad) {
+    public Sede_Profesional(String nombre, String direciion, String telefono, String area, int programas_alta_calidad) {
         super(nombre, direciion, telefono, area);
         this.programas_alta_calidad = programas_alta_calidad;
-           this.programas= new ArrayList<>();
+        this.programas = new ArrayList<>();
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Sede_Profesional extends Sede {
     }
 
     public ArrayList<String> mostrar_programas() {
-        ArrayList<String> x =new ArrayList<>(); 
+        ArrayList<String> x = new ArrayList<>();
         for (int i = 0; i < this.programas.size(); i++) {
             x.add(this.programas.get(i).mostrar_info());
         }
@@ -38,5 +38,5 @@ public class Sede_Profesional extends Sede {
     public String getNombre() {
         return nombre;
     }
-    
+
 }

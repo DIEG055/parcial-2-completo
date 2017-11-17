@@ -10,6 +10,7 @@ package parcial2;
  * @author Estudiante
  */
 public abstract class Sede {
+
     protected String nombre;
     protected String direciion;
     protected String telefono;
@@ -21,10 +22,7 @@ public abstract class Sede {
         this.telefono = telefono;
         this.area = area;
     }
-    
+
     public abstract String dar_info();
 
-
-   
 }
-

@@ -10,6 +10,7 @@ package parcial2;
  * @author Estudiante
  */
 public class Programa {
+
     private String nombre;
     private String descripcion;
 
@@ -17,8 +18,8 @@ public class Programa {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-    
-    public String mostrar_info(){
-        return this.nombre+": "+" "+this.descripcion;
+
+    public String mostrar_info() {
+        return this.nombre + ": " + " " + this.descripcion;
     }
 }

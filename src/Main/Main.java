@@ -24,6 +24,6 @@ public class Main {
     public static void main(String[] args) {
         Universidad universidad= new Universidad();
         universidad.agregar_sedes();
-        universidad.consultar_sede("bogota");
+        universidad.consultar_sede("medellin");
     }
 }
